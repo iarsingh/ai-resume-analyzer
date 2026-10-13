@@ -1,5 +1,12 @@
 # AI Resume Analyzer
 
+## Overview
+
+A small resume matcher that scores a resume against two role profiles by word overlap. The resume text is tokenized and compared with each short role blurb, and a score is returned for each role. Matching runs through a `POST /match` endpoint, and a versioned `/v1` ops API adds workspaces, tenant isolation, job approval and audit records.
+
+- **Built with:** Python, pytest, Docker Compose, GitHub Actions
+- **Scope:** Local NLP exercise with tests; no hosted model is called and no production change is applied.
+
 <!-- project-guide:start -->
 ## Project guide
 
